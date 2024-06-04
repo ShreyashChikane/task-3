@@ -1,0 +1,80 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#board {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1px;
+	width: 300px;
+	height: 300px;
+	background-color: #222;
+}
+
+.tile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	background-color: #333;
+	color: white;
+	font-size: 48px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.tile:hover {
+	background-color: #e5eeed;
+}
+
+#turn {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 24px;
+	color: white;
+}
+
+#result {
+	margin-top: 30px;
+	font-size: 24px;
+	color: white;
+}
+
+#restart {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 150px;
+	background-color: rgb(17, 16, 16);
+	border: 1px solid rgb(245, 240, 240);
+	border-radius: 40px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#restart:hover {
+	background-color: black;
+	color: white;
+}
+
+.dark-mode {
+	background-color: black;
+}
+
+.light-mode {
+	background-color: white;
+}
+
+.playerX {
+	color: red;
+}
+
+.playerO {
+	color: blue;
+}
+
